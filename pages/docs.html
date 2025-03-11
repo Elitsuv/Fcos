@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fcos - Documentation</title>
+    <link rel="icon" href="public/logo.png" type="image/x-logo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #000000;
+            font-family: 'Rubik', sans-serif;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px 20px 20px 60px;
+            position: relative;
+        }
+
+        .content-wrapper {
+            position: relative;
+            z-index: 1;
+        }
+
+        .line {
+            position: absolute;
+            top: 150px;
+            left: 20px;
+            width: 4px;
+            height: calc(100% - 150px);
+            background: linear-gradient(to bottom, #1cff7b, #edfff5);
+            z-index: 0;
+        }
+
+        h1, h2 {
+            position: relative;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        p, li {
+            margin: 10px 0;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
+        ul li, ol li {
+            list-style: none;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+            color: #000000;
+        }
+
+        ol li {
+            margin: 10px 0;
+        }
+
+        .contribute {
+            margin-top: 40px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            color: #4356ff;
+            text-decoration: underline;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #ff7c7c;
+        }
+
+        .credits {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .code-block {
+            background-color: #e8e8e8;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px 20px 20px 40px;
+            }
+
+            .line {
+                left: 10px;
+            }
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        :root {
+            --text-margin-right: 32rem; 
+            --icon-margin-left: 5px; 
+        }
+
+        .text-left {
+            margin-right: var(--text-margin-right);
+        }
+
+        .twitter-icon, .github-icon {
+            width: 25px;
+            height: auto;
+            margin-left: var(--icon-margin-left);
+            transition: transform 0.3s ease;
+        }
+
+        .twitter-icon:hover, .github-icon:hover {
+            transform: scale(1.3);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="line"></div>
+    <div class="content-wrapper">
+        <h1>Fcos Project Documentation</h1>
+
+        <h2>About Fcos</h2>
+        <p>Fcos is a minimalist productivity tool designed to enhance focus and time management. Built as a side project, it combines a Pomodoro timer with a clean, distraction-free interface to help users achieve their productivity goals.</p>
+
+        <div class="credits">
+            <p>Coded by: <a href="https://github.com/elitsuv" target="_blank">Elitsuv</a></p>
+            <p>Designed by: <a href="https://github.com/verifiedtreakee" target="_blank">Treakee</a></p>
+        </div>
+
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Pomodoro Timer:</strong> Customizable work sessions (25, 45, 90 minutes) with increasing breaks (5, 10, 15 minutes).</li>
+            <li><strong>Dark Mode:</strong> Toggle between light and dark themes for comfort.</li>
+            <li><strong>Simple Controls:</strong> Start, pause, stop, and add time with intuitive buttons.</li>
+            <li><strong>Responsive Design:</strong> Adapts seamlessly to desktop only.</li>
+        </ul>
+
+        <h2>How to Use</h2>
+        <ol>
+            <li><strong>Start a Session:</strong> Click "Start" to begin a 25-minute Pomodoro session.</li>
+            <li><strong>Take Breaks:</strong> After each work session (25, 45, 90 minutes), enjoy auto-started breaks (5, 10, 15 minutes).</li>
+            <li><strong>Pause/Resume:</strong> Use "Pause" to halt and "Resume" to continue.</li>
+            <li><strong>Stop:</strong> Click "Stop" to reset to the initial 25-minute session.</li>
+            <li><strong>Add Time:</strong> Click "Add 10+ Minutes" to extend the current session.</li>
+            <li><strong>Toggle Theme:</strong> Use icon to switch between light and dark modes.</li>
+        </ol>
+
+        <div class="contribute">
+            <h2>Contributing</h2>
+            <p>Fcos welcomes contributions to enhance its functionality and user experience. Here’s how you can get involved:</p>
+            <ol>
+                <li><strong>Fork the Repository:</strong> Visit <a href="https://github.com/elitsuv/fcoso" target="_blank">FCOSO</a> and fork it.</li>
+                <li><strong>Clone Locally:</strong> Run the following command in your terminal:
+                    <div class="code-block">
+                        <code>git clone https://github.com/elitsuv/fcos.git</code>
+                    </div>
+                </li>
+                <li><strong>Make Changes:</strong> Edit HTML, CSS, or JS files to add features, fix bugs, or improve the design.</li>
+                <li><strong>Test Locally:</strong> Open <code>index.html</code> in a browser to verify changes.
+                    <div class="code-block">
+                        <code># No specific command needed, just open the file</code>
+                    </div>
+                </li>
+                <li><strong>Commit & Push:</strong> Use the following commands:
+                    <div class="code-block">
+                        <code>git add .</code><br>
+                        <code>git commit -m "Your message & Change ID - Eg [FCO - #21]"</code><br>
+                        <code>git push</code>
+                    </div>
+                </li>
+                <li><strong>Submit a Pull Request:</strong> Open a PR on GitHub with a detailed description of your changes.</li>
+            </ol>
+            <p><strong>Guidelines:</strong> Keep it simple, maintain the black-and-white aesthetic, and ensure cross-browser compatibility. Use GitHub Issues for questions or suggestions.</p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <footer>
+        <div class="footer-container">
+            <p class="text-left">&copy; Suvro B. | Made with ⚡</p>
+            
+                <a href="https://twitter.com/elitsuv" target="_blank">
+                    <img src="/public/x.png" class="twitter-icon" alt="Twitter">
+                </a>
+                <a href="https://github.com/elitsuv" target="_blank">
+                    <img src="/public/github.png" class="github-icon" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

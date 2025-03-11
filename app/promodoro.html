@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/fcos.css">
+    <link rel="icon" href="public/logo.png" type="image/x-logo">
+
+    <!-- Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
+    <title>Fcos - Pomodoro</title>
+</head>
+<body>
+    <header>
+        <h1>Fcos</h1>
+        <nav class="nav-head">
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Fcos with?</a>
+                <div class="dropdown-content">
+                    <a href="#">Pomodoro</a>
+                    <a href="#">Deep Focus [Coming soon]</a>
+                </div>
+            </div>
+        </nav>
+        <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+            <svg class="toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2">
+                <path class="sun" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M12 8a4 4 0 100 8 4 4 0 000-8z"/>
+                <path class="moon" d="M12 3a9 9 0 009 9c0-5-4-9-9-9z"/>
+            </svg>
+        </button>
+    </header>
+
+    <main>
+        <div class="timer-container">
+            <div class="timer-circle">
+                <svg class="progress-ring" width="300" height="300">
+                    <circle class="progress-ring__circle" stroke="rgba(0, 0, 0, 0.2)" stroke-width="10" fill="transparent" r="140" cx="150" cy="150"/>
+                    <circle class="progress-ring__progress" stroke="#000" stroke-width="10" fill="transparent" r="140" cx="150" cy="150"/>
+                </svg>
+                <div class="timer-display">25:00</div>
+                <div class="Pomodoro">Pomodoro</div>
+            </div>
+            <div class="timer-controls">
+                <button class="control-btn start-btn">Start</button>
+                <button class="control-btn pause-btn">Pause</button>
+                <button class="control-btn stop-btn">Stop</button>
+            </div>
+            <button class="add-time-btn">Add 10+ Minutes</button>
+        </div>
+    </main>
+
+    <div class="quote-box" style="align-items: center; font-style: italic; text-align: center; color: brown;">
+        <p id="quote">Being consistent is key!</p>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p class="text-left">&copy; Suvro B. | Made with ⚡</p>
+            
+                <a href="https://twitter.com/elitsuv" target="_blank">
+                    <img src="/public/x.png" class="twitter-icon" alt="Twitter">
+                </a>
+                <a href="https://github.com/elitsuv" target="_blank">
+                    <img src="/public/github.png" class="github-icon" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
